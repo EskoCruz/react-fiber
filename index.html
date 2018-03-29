@@ -27,8 +27,10 @@
             }
         }
 
+        const HelloStateless = ({firstName}) => <h1>Hello {firstName}</h1>;
+
         ReactDOM.render(
-            <Hello firstName="Esko" version={16} />,
+            <HelloStateless firstName="Everyone" version={16} />,
             document.getElementById('react-container')
         )
 
